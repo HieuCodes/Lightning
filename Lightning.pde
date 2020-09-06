@@ -6,18 +6,18 @@ int startX2 = 150;
 int startY2 = 150;
 int endX2 = 0;
 int endY2 = 150;
-//PImage hammer;
+PImage hammer;
 void setup()
 {
   size(300,300);
   strokeWeight(4);
   background(0);
-  //hammer = loadImage("stormbreaker.png");
+  hammer = loadImage("stormbreaker.png");
 }
 void draw()
 {
   stroke(66,(int)(Math.random()*176) + 70, 245);
-  //image(hammer, 75, 115, width/2, height/2);
+  image(hammer, 75, 115, width/2, height/2);
   while (endX < 300)
   { 
     endX = startX + (int)(Math.random()*10);
